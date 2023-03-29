@@ -60,18 +60,18 @@ public class Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && CheckGround())
         {
             //Shoot();
-            /*if(!isJump) return;
+            if(!isJump) return;
             soundManager.PlayJumpSound();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             anim.SetBool("idle", false);
-            anim.SetBool("jump", true);*/
-            transform.localScale = new Vector3(localScale.x * 3, localScale.y *3, localScale.z *3);
+            anim.SetBool("jump", true);
+            //transform.localScale = new Vector3(localScale.x * 3, localScale.y *3, localScale.z *3);
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        /*if (Input.GetKeyUp(KeyCode.Space))
         {
             transform.localScale = localScale;
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.F))
         {
